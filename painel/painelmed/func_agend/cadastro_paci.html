@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title> Central do Médico </title>
+        <link rel="stylesheet" href="../source/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="lateral">
+                <a href="../modulo_adm.html">Administrativo</a>
+                <a href="../modulo_agend.html"> Agendamento </a>
+                <a href="../modulo_atend.html"> Atendimento </a>
+            </div>
+            <div>
+                <div class="func">
+                    <a href="./cadastro_paci.html">Cadastro Paciente</a>
+                    <a href="./agenda_consult.html">Agenda de Consulta</a>
+                    <a href="./registro_return.html">Registro de Retorno</a>
+                    <a href="./cancel_consult.html">Cancelamento de Consulta</a>
+                </div>
+                <div class="office-background">
+                    <div class="main-content form-container blur">
+                        <form class="form form-funcionario">
+                            <h2>Cadastrar Paciente</h2>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <h3>Nome:</h3>
+                                    <input class="form-input" type="text" placeholder="Nome" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Data de Nascimento:</h3>
+                                    <input class="form-input" type="text" placeholder="Data de Nascimento" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>CPF:</h3>
+                                    <input class="form-input" type="text" placeholder="CPF do Paciente" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Órgão Emissor:</h3>
+                                    <input class="form-input" type="text" placeholder="Órgão Emissor" />
+                                </div>
+                            </div>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <h3>Endereço:</h3>
+                                    <input class="form-input" type="text" placeholder="Rua" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Número:</h3>
+                                    <input class="form-input" type="text" placeholder="Número da Residência" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Bairro:</h3>
+                                    <input class="form-input" type="text" placeholder="Bairro" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Complemento:</h3>
+                                    <input class="form-input" type="text" placeholder="Complemento" />
+                                </div>
+                            </div>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <h3>Cidade:</h3>
+                                    <input class="form-input" type="text" placeholder="Cidade" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Estado:</h3>
+                                    <select class="form-input" id="especialidade" name="especialidade">
+                                        <option value=""></option>
+                                        <option value="MG">Minas Gerias</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="BA">Bahia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <h3>Telefone:</h3>
+                                    <input class="form-input" type="text" placeholder="Número de telefone do Paciente" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Celular:</h3>
+                                    <input class="form-input" type="text" placeholder="Número de celular do Paciente" />
+                                </div>
+                            </div>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <div class="form-input-container">
+                                        <h3>Sexo:</h3>
+                                        <select class="form-input" id="especialidade" name="especialidade">
+                                            <option value=""></option>
+                                            <option value="masc">Masculino</option>
+                                            <option value="fem">Feminino</option>
+                                            <option value="out">Outro/Prefiro não dizer</option>
+                                        </select>
+                                    </div>
+                            </div>
+                                <div class="form-input-container">
+                                    <div class="form-input-container">
+                                        <h3>Tem Convenio?:</h3>
+                                        <select class="form-input" id="especialidade" name="especialidade">
+                                            <option value=""></option>
+                                            <option value="Com_COnvenio">Sim</option>
+                                            <option value="Sem_Convenio">Não</option>
+                                        </select>
+                                    </div>
+                            </div>
+                            <div class="form-input-container">
+                                <h3>Nome do Convenio:</h3>
+                                <input class="form-input" type="text" placeholder="Convenio do Paciente" />
+                            </div>
+                        </div>
+                            <button class="form-input" class="enviar">Cadastrar</button>
+                        </form>
+                 </div>
+             </div>
+         </main>
+    </body>
+</html>
