@@ -4,13 +4,13 @@
         <link rel="stylesheet" href="../source/style.css">
     </head>
     <body>
-        <main>
+        <main class="no-overflow">
             <div class="lateral">
                 <a href="../modulo_adm.html">Administrativo</a>
                 <a href="../modulo_agend.html"> Agendamento </a>
                 <a href="../modulo_atend.html"> Atendimento </a>
             </div>
-            <div>
+            <div class="no-overflow">
                 <div class="func">
                     <a href="./cadastro_paci.html">Cadastro Paciente</a>
                     <a href="./agenda_consult.html">Agenda de Consulta</a>
@@ -19,9 +19,36 @@
                 </div>
                 <div class="office-background">
                     <div class="main-content form-container blur">
-                    </div>
-                 </div>
-             </div>
+                        <form class="form form-funcionario">
+                            <h2>Agendar Retorno</h2>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <h3>Identificação da Consulta:</h3>
+                                    <input class="form-input" type="text" placeholder="Nome" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Doutor:</h3>
+                                    <select class="form-input" id="especialidade" name="especialidade">
+                                        <option value=""></option>
+                                        <option value="MG">Minas Gerias</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="BA">Bahia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <label class="" for="data"><h3> Data de Retorno </h3></label>
+                                        <input type="date" id="data" class="form-input" name="dataConsult">
+                                </div>
+                                <div class="form-input-container">
+                                    <label for="data"><h3> Horário do Retorno </h3></label>
+                                        <input type="time" id="hora" class="form-input" name="horaConsult">
+                                </div>
+                            </div>
+                                <button class="form-input" class="enviar">Agendar</button>
+                        </form>
          </main>
     </body>
 </html>

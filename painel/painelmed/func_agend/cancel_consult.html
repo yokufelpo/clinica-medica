@@ -4,13 +4,13 @@
         <link rel="stylesheet" href="../source/style.css">
     </head>
     <body>
-        <main>
+        <main class="no-overflow">
             <div class="lateral">
                 <a href="../modulo_adm.html">Administrativo</a>
                 <a href="../modulo_agend.html"> Agendamento </a>
                 <a href="../modulo_atend.html"> Atendimento </a>
             </div>
-            <div>
+            <div class="no-overflow">
                 <div class="func">
                     <a href="./cadastro_paci.html">Cadastro Paciente</a>
                     <a href="./agenda_consult.html">Agenda de Consulta</a>
@@ -19,9 +19,30 @@
                 </div>
                 <div class="office-background">
                     <div class="main-content form-container blur">
-                    </div>
-                 </div>
-             </div>
+                        <form class="form form-funcionario">
+                            <h2>Cancelar Consulta</h2>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <h3>Identificação da Consulta:</h3>
+                                    <input class="form-input" type="text" placeholder="Número da Consulta" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Nome do Paciente:</h3>
+                                    <input class="form-input" type="text" placeholder="Nome do Paciente" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>CPF ou RG:</h3>
+                                    <input class="form-input" type="text" placeholder="Cpf ou RG do Paciente" />
+                                </div>
+                                </div>
+                                <div class="inputs-flex font-half-size">
+                                    <div class="form-input-container">
+                                        <h3>Motivo:</h3>
+                                        <textarea class="form-input" type="text" placeholder="escreva o motivo ou deixe em branco..." style="height:200px"></textarea>
+                                 </div>
+                                </div>
+                                <button class="form-input" class="enviar">Cancelar</button>
+                        </form>
          </main>
     </body>
 </html>

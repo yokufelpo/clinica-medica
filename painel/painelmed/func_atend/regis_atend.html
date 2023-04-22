@@ -19,9 +19,47 @@
                  </div>
                  <div class="office-background">
                     <div class="main-content form-container blur">
+                        <form class="form form-funcionario">
+                            <h2>Registro de Atendimento:</h2>
+                            <div class="inputs-flex font-half-size">
+                                <div class="form-input-container">
+                                    <h3>Nome do Paciente:</h3>
+                                    <input class="form-input" type="text" placeholder="Nome do Paciente" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Cpf:</h3>
+                                    <input class="form-input" type="text" placeholder="CPF do Paciente" />
+                                </div>
+                                <div class="form-input-container">
+                                    <h3>Convenio do Paciente:</h3>
+                                    <input class="form-input" type="text" placeholder="Nome do Convenio" />
+                                </div>
+                                </div>
+                                <div class="inputs-flex font-half-size">
+                                    <div class="form-input-container">
+                                        <label class="" for="data"><h3> Data do Atendimento </h3></label>
+                                            <input type="date" id="data" class="form-input" name="dataAtend">
+                                    </div>
+                                    <div class="form-input-container">
+                                        <label for="data"><h3> Horário do atendimento </h3></label>
+                                            <input type="time" id="hora" class="form-input" name="horaAtend">
+                                    </div>
+                                    <div class="form-input-container">
+                                        <h3>Médico Responsável:</h3>
+                                        <input class="form-input" type="text" placeholder="Nome do Doutor..." />
+                                    </div>
+                                </div>
+                                <div class="inputs-flex font-half-size">
+                                    <div class="form-input-container">
+                                        <h3>Diagnóstico:</h3>
+                                        <textarea class="form-input" type="text" placeholder="descreva o Diagnóstico para ficar salvo como Prontuário..." style="height:200px"></textarea>
+                                 </div>
+                                </div>
+                                <button class="form-input" class="enviar">Registrar Atendimento</button>
+                        </form>
                     </div>
                  </div>
-             </div>
+            </div>
          </main>
     </body>
 </html>
