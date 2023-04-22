@@ -9,9 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color:#0077b6 ;
+    width: 290px;   
     height: 100vh;
-    width: 20%;
-    margin: 0;
 }
 
 .lateral li {
@@ -31,12 +30,23 @@ body {
 }
 
 .func li {
-    display: inline;
+    display: inline-block;
     padding: 30px;
     margin-left: 65px;
+    position: static;
+}
+
+.func ul{
+    white-space: nowrap;
+    margin-top: 2px     ;
 }
 
 .func a{
     text-decoration: none;
     color: #0077b6;
+    position: static;
+}
+
+* {
+    box-sizing: border-box;
 }
